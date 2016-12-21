@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>I Hereby Agree</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color:#ccc;
+        text-align: center;
+      }
+      textarea{
+        background-color: black;
+      }
+      #agree_field{
+        display: inline-block;
+        border-style: solid;
+      }
+      #hidden_field{
+        display: inline-block;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 id="title">Before continuing to the url we want to make sure you know what you're getting into.</h3><br />
+    <h3 id="comment">Please type the following in the area below it: </h3>
+    <span id="agree_value" class="replaceable-text">I hereby agree that I know what I'm getting into.</span><br />
+    <!--<textarea id="agree_field"></textarea>-->
+    <div contenteditable="true" id="agree_field"></div><br />
+    <div id="hidden_field" class="replaceable-text">I hereby agree that I know what I'm getting into.</div>
+    <script src="./script.js"></script>
+  </body>
+</html>
